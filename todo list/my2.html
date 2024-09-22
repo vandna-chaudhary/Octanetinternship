@@ -1,71 +1,31 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to-do list</title>
+<html>
+  <head>
+    <title>A TO-DO Application</title>
     <link rel="stylesheet" href="styles2.css">
-</head>
-<body>
-    <header>
-        <nav class="container" >
-        <div class="logo">
-            <img src="" alt="todo list">
-            <p>To-Do list</p>
-        </div>
-        </nav>
-       </header>
-    <div class="main">
-        <img src="https://img.freepik.com/premium-vector/simple-notebook-paper-todo-list-template-flat-design_229280-63.jpg">
-        <div class="content">
+    <script src="javascript.js"></script>
+   
+  </head>
+  
+  <body>
+     <div class="whole">
             <div class="container">
-                <div class="todo">
-                    <input  class="todo1" type="text" placeholder="empty">
-                    <input  class="todo2" type="checkbox" >
-                    
-                </div>
-                <div class="todo">
-                    <input  class="todo1" type="text" placeholder="empty">
-                    <input  class="todo2" type="checkbox" >
-                    
-                </div>
-                <div class="todo">
-                    <input  class="todo1" type="text" placeholder="empty">
-                    <input  class="todo2" type="checkbox" >
-                    
-                </div>
-                <div class="todo">
-                    <input  class="todo1" type="text" placeholder="empty">
-                    <input  class="todo2" type="checkbox" >
-                    
-                </div>
-                <div class="todo">
-                    <input  class="todo1" type="text" placeholder="empty">
-                    <input  class="todo2" type="checkbox" >
-                    
-                </div>
-                <div class="todo">
-                    <input  class="todo1" type="text" placeholder="empty">
-                    <input  class="todo2" type="checkbox" >
-                    
-                </div>
-                <div class="todo">
-                    <input  class="todo1" type="text" placeholder="empty">
-                    <input  class="todo2" type="checkbox" >
-                    
-                </div>
-                 
-                    <div class="todo">
-                        <input  class="todo1" type="text" placeholder="empty">
-                        <input  class="todo2" type="checkbox" >
-                        
-                    </div>
-            </div>
-        </div>
-    </div>
-
-      
-</body>
+                <h1> MY TO-DO LIST</h1>
+                 <form id="task-form">
+                <label>ENTER TASK</label>
+               <input type="text" id="task-input" placeholder="Add a new Task..." required>
+               <Label>DUE-DATE</Label>
+              <input type="date" id="due-date">
+              <Label>PRIORITY</Label>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+               </form>
+              <ul id="task-list"></ul>
+             </div>
+         </div>
+    </body>
 </html>
