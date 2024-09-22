@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', ()=> {
-    //Listener will active only after entire website content is loaded.
+    
     
     const form = document.getElementById("task-form");
     const taskInput = document.getElementById("task-input"); 
@@ -74,9 +74,5 @@ document.addEventListener('DOMContentLoaded', ()=> {
     };
     
     renderTasks();
-                         
-                         
-    
-    
-    
+                          
   });
